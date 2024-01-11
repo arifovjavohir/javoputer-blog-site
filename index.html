@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BLOG</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header style="background-color: darkslategrey;">
+            <h1 style="color: chartreuse;">Blogs For You</h1>
+        </header>
+
+        
+        <div class="hiddenElements">
+            <button id="create-post-form-toggle" class="batoncha" >+</button>
+        <main id="blog-container">
+            <!-- Blog joylashgan maqolalar bu bo'limda chiqadi -->
+        </main>
+
+        <section id="create-post-form">
+            <h2>Yangi maqola qo'shish</h2>
+            <form id="post-form">
+                <label for="username">Username</label>
+                <input type="text"id="username" name="username" required placeholder="Ism,Familya...">
+                <label for="title">Sarlavha:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="image-url">Rasm URL:</label>
+                <input type="url" id="image-url" name="image-url" required>
+
+                <label for="content">Matn:</label>
+                <textarea id="content" name="content" required></textarea>
+
+                <button type="button" onclick="addPost()">Joylash</button>
+            </form>
+        </section>
+    </div>
+
+    <div id="overlay"></div>
+
+        </div>
+        
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
